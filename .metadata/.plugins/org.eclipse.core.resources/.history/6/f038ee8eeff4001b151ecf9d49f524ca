@@ -1,0 +1,25 @@
+package interfaceex;
+
+public class CalculatorTest {
+
+	public static void main(String[] args) {
+		
+		int num1 = 10;
+		int num2 = 2;
+		
+		Calc calc = new CompleteCalc();	
+		//Calc calc1 = new Calc();//인터페이스는 구현불가
+		calc.add(num1, num2); //12
+		calc.divide(num1,  num2);
+		
+		Calculator calc2 = new CompleteCalc();
+		//CompleteCalc의 경우 타입이 여러개 가능하다!
+		//형을 Calc나 Calculator로 한다면 사칙연산만 가능
+		
+		
+		
+		System.out.println(num1+num2);
+
+	}
+
+}

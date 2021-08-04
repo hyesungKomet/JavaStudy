@@ -1,0 +1,11 @@
+package abstractex;
+
+public class MyLabTop extends Computer{
+
+
+	@Override
+	public void typing() {
+		System.out.println("MyLabTop typing()");
+	}
+
+}

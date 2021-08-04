@@ -1,0 +1,16 @@
+package inheritance;
+
+public class CustomerTest1 {
+	public static void main(String[] args) {
+		Customer customerKim = new Customer();
+		customerKim.setCustomerID(2020310461);
+		customerKim.setCustomerName("Kim");
+		
+		VIPCustomer customerComet = new VIPCustomer();
+		customerComet.setCustomerID(12345);
+		customerComet.setCustomerName("Comet");
+		
+		System.out.println(customerKim.showCustomerInfo());
+		System.out.println(customerComet.showCustomerInfo());
+	}
+}

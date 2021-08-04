@@ -1,0 +1,17 @@
+package abstractex;
+
+public abstract class Computer {
+	//abstract 메소드를 사용할 때에는 abstarct class로 선언해야 함
+	
+	public abstract void display();
+	//이처럼 메소드 끝에 ;을 붙이면 바디가 없고 선언만 하겠다는 의미
+	public abstract void typing();
+	
+	public void turnOn() {
+		System.out.println("전원을 켭니다");
+	}
+	
+	public void turnOff() {
+		System.out.println("전원을 끕니다");
+	}
+}

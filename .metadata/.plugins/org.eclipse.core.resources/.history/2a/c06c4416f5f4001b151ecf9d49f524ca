@@ -1,0 +1,25 @@
+package interfaceex;
+
+public class CustomerTest {
+
+	public static void main(String[] args) {
+		Customer customer = new Customer();
+		
+		//buyer은 buy만 가능
+		Buy buyer = customer;
+		buyer.buy();
+		
+		//seller은 sell만 가능
+		Sell seller = customer;
+		seller.sell();
+		
+		//customer은 buy, sell 다 가능
+		customer.buy();
+		customer.sell();
+		
+		customer.order();
+		buyer.order();
+		seller.order();
+	}
+
+}

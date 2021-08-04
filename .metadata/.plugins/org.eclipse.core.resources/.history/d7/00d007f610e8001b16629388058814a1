@@ -1,0 +1,30 @@
+package inheritance;
+
+public class VIPCustomer extends Customer {
+	
+	//고객관리프로그램 - 고객의 등급에 따른 다른 혜택 제공
+	
+	private double saleRatio;	//할인율
+	private int agentID;	//개인상담원
+	
+	
+	public VIPCustomer(int customerID, String customerName) {
+		super(customerID, customerName);
+		//overwriting
+		customerGrade = "VIP"; //초기에는 모두 실버 why not Bronze
+		bonusRatio = 0.05;
+		saleRatio = 0.1;
+		
+		System.out.println("VIPConstructor() 호출");
+	}
+	
+	public int getAgentID() {
+		return agentID;
+	}
+	
+	
+		
+		
+	
+
+}

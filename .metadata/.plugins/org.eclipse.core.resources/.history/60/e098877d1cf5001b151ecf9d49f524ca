@@ -1,0 +1,15 @@
+package generics;
+
+public class TreeDPrinter<T> {
+	//재료가 플라스틱이든 파우더든 다 
+	//material에 매핑된다
+	private T material;
+	
+	public T getMaterial() {
+		return material;
+	}
+	
+	public void setMaterial(T material) {
+		this.material = material;
+	}
+}

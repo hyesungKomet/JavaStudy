@@ -1,0 +1,13 @@
+package inheritance;
+
+public class OverridingTest {
+	public static void main(String[] args) {
+		Customer customerLee = new Customer(10000, "Lee");
+		customerLee.calcPrice(1000);
+		System.out.println(customerLee.showCustomerInfo());
+		
+		VIPCustomer customerPark = new VIPCustomer(10001, "Park", 1010);
+		customerPark.calcPrice(1000);
+		System.out.println(customerPark.showCustomerInfo());
+	}
+}

@@ -1,0 +1,16 @@
+//toString() 메서드: 객체 정보를 문자열로 바꾸어주는 메서드
+
+package object;
+
+class Book{
+	String title;
+	String author;
+	
+	Book(String title, String author){
+		this.title = title;
+		this.author = author;
+	}
+}
+public class ToStringEx {
+
+}

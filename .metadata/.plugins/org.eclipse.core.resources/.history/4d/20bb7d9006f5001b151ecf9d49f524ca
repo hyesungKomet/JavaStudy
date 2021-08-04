@@ -1,0 +1,32 @@
+//한번 생성된 String값은 immutable(불변)이다
+//String에 가보면 final로 선언된다 --> 바뀔 수 없다!!
+
+package string;
+
+public class StringTest {
+	public static void main(String[] args) {
+		//방법1: 생성자의 매개변수로 문자열 생성
+		String str1 = new String("abc");
+		String str2 = new String("abc");
+		//힙메모리 주소가 다름!
+		System.out.println(str1 == str2);
+		
+		//방법2: 문자열 상수를 가르키는 방식
+		String str3 = "abc";
+		String str4 = "abc";
+		//"abc"라는 문자열 상수가 이미 생성되고 
+		//이를 str3, str4가 가르키기에 같게 출력됨!
+		System.out.println(str3 == str4);
+		
+		String str5 = new String("java");
+		String str6 = new String("android");
+		
+		//이건 두 개가 붙은게 아님
+		//새로운 메모리가 생성되고 거기에 javaandroid가 들어간다
+		//그리고 str5가 새로운"javaandroid"를 가르킨다!
+		System.out.println(System.identityHashCode(str5));
+		str5 = str5.concat(str6);
+		System.out.println(str5);
+		System.out.println(System.identityHashCode(str5));
+	}
+}

@@ -1,0 +1,20 @@
+//Class 클래스
+//자바의 모든 클래스, 인터페이스는 컴파일 후 class 파일로 생성됨
+//class 파일에는 객체정보(멤버변수, 메서드, 생성자)등 포함
+//Class 클래스는 컴파일된 class 파일에서 객체의 정보 가져올 수 있음
+
+//###Class.forName("클래스이름"); 메서드 중요!!!###
+
+package classex;
+
+public class ClassTest {
+	public static void main(String[] args) {
+		
+		Person person = new Person();
+		
+		//getClass()를 통해서 Class 클래스를 받을 수 있다
+		Class pClass1 = person.getClass();
+		System.out.println(pClass1.getName());
+		Class pClass2 = person.getClass();
+	}
+}

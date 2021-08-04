@@ -1,0 +1,17 @@
+//java.lang 패키지
+//프로그래밍시 import 자동으로 됨
+//String, Integer, System 등
+//jdk-10.0.1 \ lib \ src \ java base \ java \ lang
+//에 클래스들 있다
+
+//Object 클래스
+//모든 클래스의 최상위 클래스
+//extends Object를 컴파일러가 추가해준다
+//모든 클래스는 Object클래스를 상속받고 Object의 메서드 사용, 재정의가능
+//모든 클래스는 Object클래스로 형변환 가능
+
+package object;
+public class EqualTest {
+	
+
+}

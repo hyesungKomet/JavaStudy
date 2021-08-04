@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;LeastJob.java&apos; to &apos;Chapter10/src/scheduler&apos;&#x0D;&#x0A;- Original project: &apos;Chapter10&apos;&#x0D;&#x0A;- Destination element: &apos;Chapter10/src/scheduler&apos;&#x0D;&#x0A;- Original element: &apos;interfaceex.LeastJob.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;scheduler" element1="/src&lt;interfaceex{LeastJob.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1627820276981" units="1" version="1.0"/>
+</session>
